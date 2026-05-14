@@ -2,7 +2,7 @@ void mouseMoved() {
   pushMatrix();
   translate(mouseX, mouseY);
   rotate(radians(45));
-  fill(255, 0, 0);
+  fill(verde_escuro);
   rect(-5,-10,5, 20,10);
   popMatrix();
 }
