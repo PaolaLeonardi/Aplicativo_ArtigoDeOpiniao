@@ -2,17 +2,17 @@ void tela1(){
   background(fundo);
   fill(0);
   textSize(50);
-  text("APLICATIVO INICIO",500,200);
+  text("CORUJANDO",500,200);
   botaoIniciar();
 }
 void tela2(){
   background(fundo);
   // INÍCIO (menor)
   estrela(xp + 120, yp - 40, "INÍCIO", 0.8);
-  // INTRODUÇÃO
-  bolha(xp, yp + 80, "Introdução");
   // O QUE É?
-  bolha(xp - 150, yp + 180, "O que é?");
+  bolha(xp, yp + 80, "O que é?");
+  // INTRODUÇÃO
+  bolha(xp - 150, yp + 180, "Introdução");
   // DESENVOLVIMENTO
   bolha(xp, yp + 280, "Desenvolvimento");
   // CONCLUSÃO
@@ -31,14 +31,14 @@ void tela3(){
   background(fundo);
   fill(0);
   textSize(20);
-  text("INTRODUÇÃO",200,200);
+  text("O QUE É?",200,200);
 }
 
 void tela4(){
   background(fundo);
   fill(0);
   textSize(20);
-  text("O QUE É?",200,200);
+  text("INTRODUÇÃO",200,200);
 }
 
 void tela5(){

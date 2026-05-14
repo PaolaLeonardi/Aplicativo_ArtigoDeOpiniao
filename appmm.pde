@@ -1,4 +1,5 @@
 PFont fonte;
+PImage coruja;
 float xp, yp;
 boolean mouseClick = false;
 int svar = 1;
@@ -6,14 +7,15 @@ color fundo = color(235,232,225);
 color verde = color(210, 205, 160);
 color verde_escuro = color(165, 190, 150);
 color verde_estrela = color(160, 215, 110);
+color amarelo = color(250, 230, 0);
 
 void setup() {
   size(1000, 700);
   // FONTE
-  fonte = createFont("Arial", 32);
+  fonte = createFont("CourierNewPS-BoldMT", 32);
   textFont(fonte);
   textAlign(CENTER, CENTER);
-
+  coruja = loadImage("coruja.png");
   xp = 500;
   yp = 120;
 }
@@ -36,6 +38,4 @@ void draw() {
   //if (svar==32) tela32(); // 3º nível, associada a tela 3
   //if (svar==33) tela33(); // 3º nível, associada a tela 3
   //if (svar==34) tela34(); // 3º nível, associada a tela 3
-
-void mouseMoved();
 }
