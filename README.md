@@ -1,4 +1,4 @@
-# Corujando <img alt="Papel" src="https://i.imgur.com/kp0moGD.png" align="right" width="130"/>
+# Corujando <img alt="Papel" src="https://i.imgur.com/kp0moGD.png" align="right" width="134"/>
 
 📚 Sobre o Projeto
 ---
