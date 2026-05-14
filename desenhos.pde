@@ -1,12 +1,3 @@
-void mouseMoved() {
-  pushMatrix();
-  translate(mouseX, mouseY);
-  rotate(radians(45));
-  fill(255, 0, 0);
-  rect(-5,-10,5, 20,10);
-  popMatrix();
-}
-
 void bolha(float x, float y, String texto) {
   // sombra
   noStroke();
@@ -30,7 +21,7 @@ void bolinha(float x, float y) {
 void estrela(float x, float y, String texto, float s) {
   strokeJoin(ROUND);
   // ESTRELA AMARELA
-  fill(250, 230, 0);
+  fill(amarelo);
   beginShape();
   vertex(x, y - 82*s);
   vertex(x + 27*s, y - 27*s);
@@ -60,7 +51,7 @@ void estrela(float x, float y, String texto, float s) {
 }
 void botaoIniciar(){
   fill(verde_estrela);     
-  rect(350,475,300,100);    
+  rect(350,475,300,100,30);    
   fill(0);
   text("INICIAR",500,525);
 }
@@ -107,7 +98,6 @@ void mousePressed() {
     else if (svar == 53) svar = 52;
     else if (svar == 54) svar = 53;
   }
-
   // BOTÃO >>
   if (mouseX >= width - 160 && mouseX <= width - 20 && mouseY >= height - 80 && mouseY <= height - 25) {
     if (svar == 5) svar = 51;
