@@ -1,3 +1,12 @@
+void mouseMoved() {
+  pushMatrix();
+  translate(mouseX, mouseY);
+  rotate(radians(45));
+  fill(255, 0, 0);
+  rect(-5,-10,5, 20,10);
+  popMatrix();
+}
+
 void bolha(float x, float y, String texto) {
   // sombra
   noStroke();
