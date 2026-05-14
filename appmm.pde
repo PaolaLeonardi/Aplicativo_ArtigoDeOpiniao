@@ -38,4 +38,5 @@ void draw() {
   //if (svar==32) tela32(); // 3º nível, associada a tela 3
   //if (svar==33) tela33(); // 3º nível, associada a tela 3
   //if (svar==34) tela34(); // 3º nível, associada a tela 3
+mouseMoved();
 }
