@@ -1,12 +1,23 @@
 void mouseMoved() {
   pushMatrix();
+
   translate(mouseX, mouseY);
   rotate(radians(45));
+
+  // Corpo do lápis
   fill(verde_escuro);
-  rect(-5,-10,5, 20,10);
+  rect(-10, -5, 50, 10);
+
+  // Madeira
+  fill(255, 220, 180);
+  triangle(-10, -5, -20, 0, -10, 5);
+
+  // Grafite mais "pra dentro"
+  fill(50);
+  triangle(-16, -2, -20, 0, -16, 2);
+
   popMatrix();
 }
-
 void bolha(float x, float y, String texto) {
   // sombra
   noStroke();
