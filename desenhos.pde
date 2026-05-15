@@ -8,11 +8,11 @@ void mouseMoved() {
   fill(verde_escuro);
   rect(-10, -5, 50, 10);
 
-  // Madeira
+  // Madeira d ponta
   fill(255, 220, 180);
   triangle(-10, -5, -20, 0, -10, 5);
 
-  // Grafite mais "pra dentro"
+  // Pontinha preta
   fill(50);
   triangle(-16, -2, -20, 0, -16, 2);
 
