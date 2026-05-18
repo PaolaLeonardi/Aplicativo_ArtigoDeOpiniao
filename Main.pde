@@ -29,7 +29,7 @@ boolean quizDesbloqueado() {
 void setup() {
   size(1000, 700);
   // FONTE
-  fonte = createFont("Georgia", 32, true);
+  fonte = createFont ("CourierNewPS-BoldMT", 32);
   textFont(fonte);
   textAlign(CENTER, CENTER);
   coruja = loadImage("coruja.png");
