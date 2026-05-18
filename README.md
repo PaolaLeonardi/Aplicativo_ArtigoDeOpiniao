@@ -8,11 +8,12 @@ O aprendizado acontece através de mini quizzes ao longo do conteúdo e termina 
 O objetivo é transformar o estudo da produção textual em uma experiência mais dinâmica, incentivando o raciocínio crítico e a interpretação de argumentos.
 
 🎯 Objetivos do App
----
--> Explicar o que é um artigo de opinião<br>
+--- 
+<img alt="Logo com IA" src="https://i.imgur.com/WZdXmMI.png" height="200" align="right"/> <!-- Infelizmente tivemos que usar IA para a geração de imagem deste trabalho pois era uma característica obrigatória. Pedimos desculpas por qualquer inconveniência :c -->
+-> Explicar o que é um artigo de opinião<br> 
 -> Ensinar estrutura e características do gênero textual<br>
 -> Trabalhar argumentação e senso crítico<br>
--> Fixar o conteúdo com mini quizzes interativos<br>
+-> Fixar o conteúdo com mini quizzes interativos<br> 
 -> Avaliar o aprendizado com um quiz final
 
 ---
