@@ -1,3 +1,8 @@
+boolean viuOQueE = false;
+boolean viuIntro = false;
+boolean viuDesenvolvimento = false;
+boolean viuConclusao = false;
+// -- //
 PFont fonte;
 PImage coruja;
 float xp, yp;
@@ -14,10 +19,17 @@ color verde2 = #AABE9B;
 color bege2 = #D4CFA5;
 color oliva = #A29D7F;
 
+boolean quizDesbloqueado() {
+  return viuOQueE &&
+         viuIntro &&
+         viuDesenvolvimento &&
+         viuConclusao;
+}
+
 void setup() {
   size(1000, 700);
   // FONTE
-  fonte = createFont("CourierNewPS-BoldMT", 32);
+  fonte = createFont("Georgia", 32, true);
   textFont(fonte);
   textAlign(CENTER, CENTER);
   coruja = loadImage("coruja.png");
