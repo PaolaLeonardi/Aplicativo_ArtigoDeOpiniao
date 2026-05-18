@@ -9,11 +9,11 @@ O objetivo é transformar o estudo da produção textual em uma experiência mai
 
 🎯 Objetivos do App
 ---
-Explicar o que é um artigo de opinião
-Ensinar estrutura e características do gênero textual
-Trabalhar argumentação e senso crítico
-Fixar o conteúdo com mini quizzes interativos
-Avaliar o aprendizado com um quiz final
+-> Explicar o que é um artigo de opinião<br>
+-> Ensinar estrutura e características do gênero textual<br>
+-> Trabalhar argumentação e senso crítico<br>
+-> Fixar o conteúdo com mini quizzes interativos<br>
+-> Avaliar o aprendizado com um quiz final
 
 ---
 <h2>👥 Alunos Contribuintes:</h2> 
