@@ -5,20 +5,98 @@ void tela1(){
   text("CORUJANDO",200,200);
   botaoIniciar();
 }
+
+void tela31(){
+
+  background(bege);
+
+  botaoVoltar();
+
+  fill(marrom);
+
+  textSize(50);
+  text("Definição", 500, 100);
+
+  lapis();
+  lapisInvertido();
+
+  fill(marrom);
+
+  textSize(20);
+  text("Clique nos lápis", 500, 630);
+
+  fill(verde2);
+  rect(250, 200, 500, 200);
+
+  fill(marrom);
+
+  textSize(22);
+
+  text("Artigo de Opinião", 500, 220);
+
+  textSize(18);
+
+  text(
+    "O artigo de opinião é um texto em que\n"
+    + "o autor apresenta sua opinião sobre um tema\n"
+    + "usando argumentos para convencer o leitor.",
+    500,
+    300
+  );
+}
+
 void tela2(){
   background(fundo);
-  // INÍCIO (menor)
+
   estrela(xp + 120, yp - 40, "INÍCIO", 0.8);
-  // O QUE É?
+
   bolha(xp, yp + 80, "O que é?");
-  // INTRODUÇÃO
   bolha(xp - 150, yp + 180, "Introdução");
-  // DESENVOLVIMENTO
   bolha(xp, yp + 280, "Desenvolvimento");
-  // CONCLUSÃO
   bolha(xp + 160, yp + 390, "Conclusão");
-  // QUIZ (maior)
-  estrela(xp, 600, "QUIZ", 1.0);
+
+  if (quizDesbloqueado()) {
+    estrela(xp, 600, "QUIZ", 1.0);
+  } else {
+
+    fill(120);
+
+    beginShape();
+    vertex(xp, 600 - 82);
+    vertex(xp + 27, 600 - 27);
+    vertex(xp + 92, 600);
+    vertex(xp + 27, 600 + 27);
+    vertex(xp, 600 + 82);
+    vertex(xp - 27, 600 + 27);
+    vertex(xp - 92, 600);
+    vertex(xp - 27, 600 - 27);
+    endShape(CLOSE);
+
+    fill(40);
+    textSize(18);
+    text("QUIZ", xp, 600);
+
+    pushStyle();
+
+  fill(50);
+  rect(xp - 20, 585, 40, 35, 8);
+
+  noFill();
+  stroke(50);
+
+  strokeWeight(2);
+
+  arc(xp, 585, 30, 30, PI, TWO_PI);
+
+  popStyle();
+  }
+
+  bolinha(xp + 70, yp + 10);
+  bolinha(xp - 90, yp + 120);
+  bolinha(xp - 70, yp + 230);
+  bolinha(xp + 80, yp + 330);
+  bolinha(xp + 70, yp + 440);
+
   // bolinhas verdes
   bolinha(xp + 70, yp + 10);
   bolinha(xp - 90, yp + 120);
@@ -28,56 +106,49 @@ void tela2(){
 }
 
 void tela3(){
+  viuOQueE = true;
+
   svar=3;
+
   background(bege);
-  // título
+
+  botaoVoltar();
+
   fill(marrom);
+
   textSize(50);
   text("Definição", 500, 100);
+
   lapis();
   lapisInvertido();
+
   fill(marrom);
   textSize(20);
+
   text("Clique nos lápis", 500, 630);
+
   fill(verde2);
+
   rect(250, 200, 500, 200);
+
   triangle(250,200,750,200,500,300);
 }
 
-void tela31(){
-  background(bege);
-  // título
-  fill(marrom);
-  textSize(50);
-  text("Definição", 500, 100);
-  lapis();
-  lapisInvertido();
-  fill(marrom);
-  textSize(20);
-  text("Clique nos lápis", 500, 630);
-  fill(verde2);
-  rect(250, 200, 500, 200);
-  fill(marrom);
-  textSize(22);
-  text("Artigo de Opinião", 500, 220);
-  textSize(18);
-  text(
-    "O artigo de opinião é um texto em que\n"
-    + "o autor apresenta sua opinião sobre um tema\n"
-    + "usando argumentos para convencer o leitor.",
-    500, 300
-  );
-}
+
 
 void tela4(){
+  viuIntro = true;
   background(fundo);
+  botaoVoltar();
+
   fill(0);
   textSize(20);
   text("INTRODUÇÃO",200,200);
 }
 
 void tela5(){
-  background(255, 220, 220);
+  viuDesenvolvimento = true;
+  background(bege);
   desenharBotoes5();
   fill(0);
   // TÍTULO
@@ -202,7 +273,12 @@ void tela54() {
 }
 
 void tela6(){
+  viuConclusao = true;
+
   background(fundo);
+
+  botaoVoltar();
+
   fill(0);
   textSize(20);
   text("CONCLUSÃO",200,200);
@@ -210,8 +286,10 @@ void tela6(){
 
 void tela7(){
   background(fundo);
+
+  botaoVoltar();
+
   fill(0);
   textSize(20);
   text("QUIZ",200,200);
-  
 }
