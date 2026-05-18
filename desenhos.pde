@@ -56,6 +56,16 @@ void botaoIniciar(){
   fill(0);
   text("INICIAR",200,525);
 }
+
+void botaoVoltar() {
+  fill(verde_escuro);
+  rect(20, height - 80, 140, 55, 10);
+
+  fill(0);
+  textSize(22);
+  text("<< VOLTAR", 90, height - 52);
+  
+}
 void desenharBotoes5() {
   textSize(20);
   // BOTÃO VOLTAR
@@ -88,8 +98,18 @@ void lapisInvertido() {
   fill(marrom);
   triangle(310, 565, 310, 585, 290, 575);
 }
+
 // CLIQUES
 void mousePressed() {
+  // Botão de voltar
+  if (mouseX >= 20 && mouseX <= 160 &&
+    mouseY >= height - 80 && mouseY <= height - 25) {
+
+  if (svar == 3) svar = 2;
+  else if (svar == 4) svar = 2;
+  else if (svar == 6) svar = 2;
+  else if (svar == 7) svar = 2;
+}
   // BOTÃO INICIAR
   if (svar == 1) {
     if (mouseX > 50 && mouseX < 350 && mouseY > 475 && mouseY < 575) svar = 2;
@@ -97,9 +117,9 @@ void mousePressed() {
   // BOTÕES DAS BOLHAS
   if (svar == 2) {
     // INTRODUÇÃO
-    if (dist(mouseX, mouseY, xp, yp + 80) < 60) svar = 3;
-    // O QUE É
-    if (dist(mouseX, mouseY, xp - 150, yp + 180) < 60) svar = 4;
+  if (dist(mouseX, mouseY, xp, yp + 80) < 60) svar = 3;
+  // O QUE É
+  if (dist(mouseX, mouseY, xp - 150, yp + 180) < 60) svar = 4;
     // DESENVOLVIMENTO
     if (dist(mouseX, mouseY, xp, yp + 280) < 60) svar = 5;
     // CONCLUSÃO
@@ -107,7 +127,9 @@ void mousePressed() {
     // ESTRELA INÍCIO
     if (dist(mouseX, mouseY, xp + 120, yp - 40) < 60) svar = 1;
     // ESTRELA QUIZ
-    if (dist(mouseX, mouseY, xp, 600) < 60) svar = 7;
+    if (dist(mouseX, mouseY, xp, 600) < 60 && quizDesbloqueado()) {
+    svar = 7; // Quando desbloquear a estrela 
+}
   }
   // BOTÃO <<
   if (mouseX >= 20 && mouseX <= 160 && mouseY >= height - 80 && mouseY <= height - 25) {
