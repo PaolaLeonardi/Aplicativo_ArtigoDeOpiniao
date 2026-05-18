@@ -1,23 +1,3 @@
-void mouseMoved() {
-  pushMatrix();
-
-  translate(mouseX, mouseY);
-  rotate(radians(45));
-
-  // Corpo do lápis
-  fill(verde_escuro);
-  rect(-10, -5, 50, 10);
-
-  // Madeira d ponta
-  fill(255, 220, 180);
-  triangle(-10, -5, -20, 0, -10, 5);
-
-  // Pontinha preta
-  fill(50);
-  triangle(-16, -2, -20, 0, -16, 2);
-
-  popMatrix();
-}
 void bolha(float x, float y, String texto) {
   // sombra
   noStroke();
@@ -39,6 +19,7 @@ void bolinha(float x, float y) {
   ellipse(x, y, 30, 30);
 }
 void estrela(float x, float y, String texto, float s) {
+  noStroke();
   strokeJoin(ROUND);
   // ESTRELA AMARELA
   fill(amarelo);
@@ -71,9 +52,9 @@ void estrela(float x, float y, String texto, float s) {
 }
 void botaoIniciar(){
   fill(verde_estrela);     
-  rect(350,475,300,100,30);    
+  rect(50,475,300,100,30);    
   fill(0);
-  text("INICIAR",500,525);
+  text("INICIAR",200,525);
 }
 void desenharBotoes5() {
   textSize(20);
@@ -88,11 +69,30 @@ void desenharBotoes5() {
   fill(0);
   text(">>", width - 90, height - 52);
 }
+void lapis() {
+  stroke(0);
+  fill(oliva);
+  rect(510, 550, 150, 50);
+  fill(bege);
+  triangle(660, 550, 710, 575, 660, 600);
+  fill(marrom);
+  triangle(690, 585, 690, 565, 710, 575);
+}
+void lapisInvertido() {
+  // lápis invertido 
+  stroke(0);
+  fill(oliva);
+  rect(340, 550, 150, 50);
+  fill(bege);
+  triangle(340, 550, 290, 575, 340, 600);
+  fill(marrom);
+  triangle(310, 565, 310, 585, 290, 575);
+}
 // CLIQUES
 void mousePressed() {
   // BOTÃO INICIAR
   if (svar == 1) {
-    if (mouseX > 350 && mouseX < 650 && mouseY > 475 && mouseY < 575) svar = 2;
+    if (mouseX > 50 && mouseX < 350 && mouseY > 475 && mouseY < 575) svar = 2;
   }
   // BOTÕES DAS BOLHAS
   if (svar == 2) {
@@ -109,7 +109,6 @@ void mousePressed() {
     // ESTRELA QUIZ
     if (dist(mouseX, mouseY, xp, 600) < 60) svar = 7;
   }
-
   // BOTÃO <<
   if (mouseX >= 20 && mouseX <= 160 && mouseY >= height - 80 && mouseY <= height - 25) {
     if (svar == 5) svar = 2;
@@ -125,5 +124,18 @@ void mousePressed() {
     else if (svar == 52) svar = 53;
     else if (svar == 53) svar = 54;
     else if (svar == 54) svar = 5;
+  }
+  // TELA 3
+  if (svar == 3) {
+    // avançar
+    if (mouseX >= 510 && mouseX <= 710 && mouseY >= 550 && mouseY <= 600) svar = 31;
+    // voltar
+    if (mouseX >= 290 && mouseX <= 490 && mouseY >= 550 && mouseY <= 600) svar = 2;
+  }
+  else if (svar == 31) {
+    // avançar
+    if (mouseX >= 510 && mouseX <= 710 && mouseY >= 550 && mouseY <= 600) svar = 3;
+    // voltar
+    if (mouseX >= 290 && mouseX <= 490 && mouseY >= 550 && mouseY <= 600) svar = 3;
   }
 }

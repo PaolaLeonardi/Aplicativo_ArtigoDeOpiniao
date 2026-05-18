@@ -2,7 +2,7 @@ void tela1(){
   background(fundo);
   fill(0);
   textSize(50);
-  text("CORUJANDO",500,200);
+  text("CORUJANDO",200,200);
   botaoIniciar();
 }
 void tela2(){
@@ -28,10 +28,45 @@ void tela2(){
 }
 
 void tela3(){
-  background(fundo);
-  fill(0);
+  svar=3;
+  background(bege);
+  // título
+  fill(marrom);
+  textSize(50);
+  text("Definição", 500, 100);
+  lapis();
+  lapisInvertido();
+  fill(marrom);
   textSize(20);
-  text("O QUE É?",200,200);
+  text("Clique nos lápis", 500, 630);
+  fill(verde2);
+  rect(250, 200, 500, 200);
+  triangle(250,200,750,200,500,300);
+}
+
+void tela31(){
+  background(bege);
+  // título
+  fill(marrom);
+  textSize(50);
+  text("Definição", 500, 100);
+  lapis();
+  lapisInvertido();
+  fill(marrom);
+  textSize(20);
+  text("Clique nos lápis", 500, 630);
+  fill(verde2);
+  rect(250, 200, 500, 200);
+  fill(marrom);
+  textSize(22);
+  text("Artigo de Opinião", 500, 220);
+  textSize(18);
+  text(
+    "O artigo de opinião é um texto em que\n"
+    + "o autor apresenta sua opinião sobre um tema\n"
+    + "usando argumentos para convencer o leitor.",
+    500, 300
+  );
 }
 
 void tela4(){
