@@ -4,7 +4,7 @@ boolean viuDesenvolvimento = false;
 boolean viuConclusao = false;
 // -- //
 PFont fonte;
-PImage coruja;
+PImage coruja,imagem1,jornal1,cartas1,selo1,pena1,rosas1;
 float xp, yp;
 boolean mouseClick = false;
 int svar = 1;
@@ -33,6 +33,12 @@ void setup() {
   textFont(fonte);
   textAlign(CENTER, CENTER);
   coruja = loadImage("coruja.png");
+  imagem1 = loadImage("Captura_de_Tela__66_-removebg-preview.png");
+  jornal1 = loadImage("jornal1.png");
+  cartas1 = loadImage("cartas1.png");
+  selo1 = loadImage("selo1.png");
+  pena1 = loadImage("pena1.png");
+  rosas1 = loadImage("rosas1.png");
   xp = 500;
   yp = 120;
 }
@@ -51,8 +57,8 @@ void draw() {
   if (svar==53) tela53(); // 3- associado tela 5
   if (svar==54) tela54(); // 4- associado tela 5
   
-  if (svar==31) tela31(); // 3- associado tela 3
-  //if (svar==32) tela32(); // 3º nível, associada a tela 3
+  if (svar==31) tela31(); // 1- associado tela 3
+  if (svar==61) tela61(); // 1- associado tela 6
   //if (svar==33) tela33(); // 3º nível, associada a tela 3
   //if (svar==34) tela34(); // 3º nível, associada a tela 3
  

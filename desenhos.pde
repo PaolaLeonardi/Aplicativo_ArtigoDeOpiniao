@@ -101,15 +101,15 @@ void lapisInvertido() {
 
 // CLIQUES
 void mousePressed() {
-  // Botão de voltar
-  if (mouseX >= 20 && mouseX <= 160 &&
-    mouseY >= height - 80 && mouseY <= height - 25) {
-
-  if (svar == 3) svar = 2;
-  else if (svar == 4) svar = 2;
-  else if (svar == 6) svar = 2;
-  else if (svar == 7) svar = 2;
-}
+  // BOTÃO VOLTAR
+  if (mouseX >= 20 && mouseX <= 160 && mouseY >= height - 80 && mouseY <= height - 25) {
+    if (svar == 3) svar = 2;
+    else if (svar == 31) svar = 2;
+    else if (svar == 4) svar = 2;
+    else if (svar == 6) svar = 2;
+    else if (svar == 7) svar = 2;
+    else if (svar==61) svar=2;
+  }
   // BOTÃO INICIAR
   if (svar == 1) {
     if (mouseX > 50 && mouseX < 350 && mouseY > 475 && mouseY < 575) svar = 2;
@@ -159,5 +159,9 @@ void mousePressed() {
     if (mouseX >= 510 && mouseX <= 710 && mouseY >= 550 && mouseY <= 600) svar = 3;
     // voltar
     if (mouseX >= 290 && mouseX <= 490 && mouseY >= 550 && mouseY <= 600) svar = 3;
+  }
+  if (mouseX >= width-160 && mouseX <= width-20 && mouseY >= height-80 && mouseY <= height-25){
+    if (svar==6) svar=61;
+    else if (svar==61) svar=6;
   }
 }

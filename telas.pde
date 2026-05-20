@@ -6,50 +6,10 @@ void tela1(){
   botaoIniciar();
 }
 
-void tela31(){
-
-  background(bege);
-
-  botaoVoltar();
-
-  fill(marrom);
-
-  textSize(50);
-  text("Definição", 500, 100);
-
-  lapis();
-  lapisInvertido();
-
-  fill(marrom);
-
-  textSize(20);
-  text("Clique nos lápis", 500, 630);
-
-  fill(verde2);
-  rect(250, 200, 500, 200);
-
-  fill(marrom);
-
-  textSize(22);
-
-  text("Artigo de Opinião", 500, 220);
-
-  textSize(18);
-
-  text(
-    "O artigo de opinião é um texto em que\n"
-    + "o autor apresenta sua opinião sobre um tema\n"
-    + "usando argumentos para convencer o leitor.",
-    500,
-    300
-  );
-}
-
 void tela2(){
   background(fundo);
-
+  
   estrela(xp + 120, yp - 40, "INÍCIO", 0.8);
-
   bolha(xp, yp + 80, "O que é?");
   bolha(xp - 150, yp + 180, "Introdução");
   bolha(xp, yp + 280, "Desenvolvimento");
@@ -58,9 +18,7 @@ void tela2(){
   if (quizDesbloqueado()) {
     estrela(xp, 600, "QUIZ", 1.0);
   } else {
-
     fill(120);
-
     beginShape();
     vertex(xp, 600 - 82);
     vertex(xp + 27, 600 - 27);
@@ -75,19 +33,13 @@ void tela2(){
     fill(40);
     textSize(18);
     text("QUIZ", xp, 600);
-
     pushStyle();
-
   fill(50);
   rect(xp - 20, 585, 40, 35, 8);
-
   noFill();
   stroke(50);
-
   strokeWeight(2);
-
   arc(xp, 585, 30, 30, PI, TWO_PI);
-
   popStyle();
   }
 
@@ -107,34 +59,54 @@ void tela2(){
 
 void tela3(){
   viuOQueE = true;
-
   svar=3;
-
   background(bege);
-
   botaoVoltar();
-
   fill(marrom);
-
   textSize(50);
-  text("Definição", 500, 100);
-
+  text("DEFINIÇÃO", 500, 100);
   lapis();
   lapisInvertido();
 
   fill(marrom);
   textSize(20);
-
   text("Clique nos lápis", 500, 630);
 
   fill(verde2);
-
-  rect(250, 200, 500, 200);
-
-  triangle(250,200,750,200,500,300);
+  rect(200, 200, 600, 300);
+  triangle(200,200,800,200,500,350);
+  
+  image(cartas1,800,10,180,200);
+  image(pena1,10,10,180,250);
+  image(selo1,450,300,100,100);
 }
-
-
+void tela31(){
+  background(bege);
+  botaoVoltar();
+  fill(marrom);
+  textSize(50);
+  text("DEFINIÇÃO", 500, 100);
+  lapis();
+  lapisInvertido();
+  fill(marrom);
+  textSize(20);
+  text("Clique nos lápis", 500, 630);
+  fill(verde2);
+  rect(200, 200, 600, 300);
+  fill(marrom);
+  textSize(30);
+  text("Artigo de Opinião", 500, 250);
+  textSize(24);
+  text(
+    "O artigo de opinião é um texto em\n"
+    + "que o autor apresenta sua opinião sobre\n"
+    + "um tema usando argumentos para\n"
+    + "convencer o leitor.",
+    500, 365
+  );
+  image(cartas1,800,10,180,200);
+  image(pena1,10,10,180,250);
+}
 
 void tela4(){
   viuIntro = true;
@@ -157,7 +129,7 @@ void tela5(){
   textSize(24);
   // Define uma área para o texto
   text(
-    "Desenvolvimento: Esta é a parte central, onde o autor "
+    "Essa é a parte central, onde o autor "
     + "apresenta seus argumentos e justificativas para sustentar "
     + "sua opinião.\n\n"
     + "O desenvolvimento deve incluir dados, fatos e exemplos "
@@ -274,14 +246,59 @@ void tela54() {
 
 void tela6(){
   viuConclusao = true;
-
   background(fundo);
-
   botaoVoltar();
-
+  fill(bege);
+  rect(95,230,810,200);
   fill(0);
-  textSize(20);
-  text("CONCLUSÃO",200,200);
+  // TÍTULO
+  textSize(50);
+  text("CONCLUSÃO", width/2, 100);
+  //texto
+  textSize(24);
+  text(
+     "Na conclusão, o autor resume os principais pontos discutidos e pode apresentar soluções ou reflexões sobre o tema abordado.",
+    100,   // posição X
+    130,   // posição Y
+    800,   // largura máxima
+    400    // altura máxima
+  );
+  image(imagem1, 410, 450, 160, 170);
+  image(jornal1,650,-70,420,350);
+  image(rosas1,-20,10,200,200);
+  fill(bege);
+  rect(width - 160, height - 80, 140, 55, 10);
+  fill(0);
+  text("PRÓXIMO", width - 90, height - 52);
+}
+void tela61(){
+  viuConclusao = true;
+  background(fundo);
+  botaoVoltar();
+  fill(bege);
+  rect(95,150,810,400);
+  fill(0);
+  // TÍTULO
+  textSize(50);
+  text("CONCLUSÃO", width/2, 100);
+  //texto
+  textSize(24);
+  text(
+     "EXEMPLO DE CONCLUSÃO\n\n"
+     + "Abaixo, veja um exemplo prático de conclusão focado no tema 'A importância da preservação ambiental':\n\n"
+     + "'Em suma, a preservação ambiental não deve ser vista como um obstáculo ao desenvolvimento econômico, mas como a única garantia de sobrevivência para as futuras gerações. Diante dos severos alertas climáticos que enfrentamos, é urgente que o poder público e a sociedade civil abandonem a inércia e adotem práticas sustentáveis imediatas. Afinal, cuidar do meio ambiente é um dever de todos e a chave para construirmos um futuro viável.'",
+    100,   // posição X
+    150,   // posição Y
+    800,   // largura máxima
+    400    // altura máxima
+  );
+  image(jornal1,650,-70,420,350);
+  image(rosas1,-20,10,200,200);
+  fill(bege);
+  rect(width - 160, height - 80, 140, 55, 10);
+  fill(0);
+  text("PRÓXIMO", width - 90, height - 52);
+  
 }
 
 void tela7(){
