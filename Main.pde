@@ -4,7 +4,7 @@ boolean viuDesenvolvimento = false;
 boolean viuConclusao = false;
 // -- //
 PFont fonte;
-PImage coruja,imagem1,jornal1,cartas1,selo1,pena1,rosas1;
+PImage coruja,imagem1,jornal1,cartas1,selo1,pena1,rosas1,logo,planta1,planta1Invertida,pombo,passaro1,cartas2,planta2;
 float xp, yp;
 boolean mouseClick = false;
 int svar = 1;
@@ -28,10 +28,11 @@ boolean quizDesbloqueado() {
 
 void setup() {
   size(1000, 700);
-  // FONTE
+  // TEXTO
   fonte = createFont ("CourierNewPS-BoldMT", 32);
   textFont(fonte);
   textAlign(CENTER, CENTER);
+  // IMAGENS
   coruja = loadImage("coruja.png");
   imagem1 = loadImage("Captura_de_Tela__66_-removebg-preview.png");
   jornal1 = loadImage("jornal1.png");
@@ -39,6 +40,14 @@ void setup() {
   selo1 = loadImage("selo1.png");
   pena1 = loadImage("pena1.png");
   rosas1 = loadImage("rosas1.png");
+  logo = loadImage("logo.png");
+  planta1 = loadImage("planta1.png");
+  planta1Invertida = loadImage("planta1Invertida.png");
+  planta2 = loadImage("planta2.png");
+  pombo = loadImage("pombo.png");
+  passaro1 = loadImage("passaro1.png");
+  cartas2 = loadImage("cartas2.png");
+  
   xp = 500;
   yp = 120;
 }

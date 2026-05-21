@@ -50,11 +50,19 @@ void estrela(float x, float y, String texto, float s) {
   textSize(18 * s);
   text(texto, x, y);
 }
+void botaoSair(){
+  fill(verde_estrela);     
+  rect(150,575,300,100,30);    
+  fill(0);
+  textSize(50);
+  text("SAIR",300,625);
+}
 void botaoIniciar(){
   fill(verde_estrela);     
-  rect(50,475,300,100,30);    
+  rect(550,575,300,100,30);    
   fill(0);
-  text("INICIAR",200,525);
+  textSize(50);
+  text("INICIAR",700,625);
 }
 
 void botaoVoltar() {
@@ -110,16 +118,20 @@ void mousePressed() {
     else if (svar == 7) svar = 2;
     else if (svar==61) svar=2;
   }
+  // BOTÃO SAIR
+  if (svar == 1) {
+    if (mouseX > 150 && mouseX < 450 && mouseY > 575 && mouseY < 675) exit();
+  }
   // BOTÃO INICIAR
   if (svar == 1) {
-    if (mouseX > 50 && mouseX < 350 && mouseY > 475 && mouseY < 575) svar = 2;
+    if (mouseX > 550 && mouseX < 750 && mouseY > 575 && mouseY < 675) svar = 2;
   }
   // BOTÕES DAS BOLHAS
   if (svar == 2) {
     // INTRODUÇÃO
-  if (dist(mouseX, mouseY, xp, yp + 80) < 60) svar = 3;
-  // O QUE É
-  if (dist(mouseX, mouseY, xp - 150, yp + 180) < 60) svar = 4;
+    if (dist(mouseX, mouseY, xp, yp + 80) < 60) svar = 3;
+    // O QUE É
+    if (dist(mouseX, mouseY, xp - 150, yp + 180) < 60) svar = 4;
     // DESENVOLVIMENTO
     if (dist(mouseX, mouseY, xp, yp + 280) < 60) svar = 5;
     // CONCLUSÃO
@@ -128,7 +140,7 @@ void mousePressed() {
     if (dist(mouseX, mouseY, xp + 120, yp - 40) < 60) svar = 1;
     // ESTRELA QUIZ
     if (dist(mouseX, mouseY, xp, 600) < 60 && quizDesbloqueado()) {
-    svar = 7; // Quando desbloquear a estrela 
+    svar = 7; // Quando desbloquear o quiz 
 }
   }
   // BOTÃO <<

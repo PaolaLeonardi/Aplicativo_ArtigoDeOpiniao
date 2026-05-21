@@ -1,9 +1,10 @@
 void tela1(){
   background(fundo);
-  fill(0);
-  textSize(50);
-  text("CORUJANDO",200,200);
   botaoIniciar();
+  botaoSair();
+  image(logo,250,50,500,500);
+  image(planta1,-50,0,300,500);
+  image(planta1Invertida,750,0,300,500);
 }
 
 void tela2(){
@@ -265,7 +266,10 @@ void tela6(){
   );
   image(imagem1, 410, 450, 160, 170);
   image(jornal1,650,-70,420,350);
-  image(rosas1,-20,10,200,200);
+  image(rosas1,20,-80,200,200);
+  image(rosas1,-70,-50,200,200);
+  image(rosas1,-70,30,200,200);
+  image(rosas1,0,0,200,200);
   fill(bege);
   rect(width - 160, height - 80, 140, 55, 10);
   fill(0);
