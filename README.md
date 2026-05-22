@@ -10,7 +10,7 @@ O objetivo é transformar o estudo da produção textual em uma experiência mai
 🎯 Objetivos do App
 --- 
 <img alt="Logo com IA" src="https://i.imgur.com/WZdXmMI.png" height="200" align="right"/> <!-- Infelizmente tivemos que usar IA para a geração de imagem deste trabalho pois era uma característica obrigatória. Pedimos desculpas por qualquer inconveniência :c -->
-=-> Explicar o que é um artigo de opinião<br> 
+-> Explicar o que é um artigo de opinião<br> 
 -> Ensinar estrutura e características do gênero textual<br>
 -> Trabalhar argumentação e senso crítico<br>
 -> Fixar o conteúdo com mini quizzes interativos<br> 
