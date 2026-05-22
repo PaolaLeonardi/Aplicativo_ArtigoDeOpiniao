@@ -19,5 +19,6 @@ O objetivo é transformar o estudo da produção textual em uma experiência mai
 ---
 <h2>👥 Alunos Contribuintes:</h2> 
 
-  <img src="https://contrib.rocks/image?repo=PaolaLeonardi/Aplicativo_ArtigoDeOpiniao" />
+ <a href="https://github.com/PaolaLeonardi/Aplicativo_ArtigoDeOpiniao/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=PaolaLeonardi/Aplicativo_ArtigoDeOpiniao&max=1000" />
 </a>
